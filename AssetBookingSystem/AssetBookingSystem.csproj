@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{165CF321-BC38-45BB-98E7-4D4BC2EE4B63}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetBookingSystem</RootNamespace>
+    <AssemblyName>AssetBookingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.3.0.0\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\packages\Common.Logging.Core.3.0.0\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Quartz">
+      <HintPath>..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addROOM.aspx" />
+    <Content Include="Image\2ndFloorVideo.PNG" />
+    <Content Include="Image\bblock.PNG" />
+    <Content Include="Image\book.PNG" />
+    <Content Include="Image\booking.PNG" />
+    <Content Include="Image\cal.gif" />
+    <Content Include="Image\cal.PNG" />
+    <Content Include="Image\cal2.PNG" />
+    <Content Include="Image\cam.PNG" />
+    <Content Include="Image\Capture.PNG" />
+    <Content Include="Image\case.PNG" />
+    <Content Include="Image\cblocktrolley.PNG" />
+    <Content Include="Image\cd50.png" />
+    <Content Include="Image\dblocktrolley.PNG" />
+    <Content Include="Image\DellE5500Med.jpg" />
+    <Content Include="Image\dellnet.PNG" />
+    <Content Include="Image\Dell_d630.jpg" />
+    <Content Include="Image\finepix.jpg" />
+    <Content Include="Image\finepixf401.jpg" />
+    <Content Include="Image\fpix.png" />
+    <Content Include="Image\leftBG.gif" />
+    <Content Include="Image\lenovo_g530-221.jpg" />
+    <Content Include="Image\library.PNG" />
+    <Content Include="Image\lunax.PNG" />
+    <Content Include="Image\mainmalv.PNG" />
+    <Content Include="Image\mainmalv1st.PNG" />
+    <Content Include="Image\newbuilding.PNG" />
+    <Content Include="Image\newbuilding2.PNG" />
+    <Content Include="Image\ohp.jpg" />
+    <Content Include="Image\olympus.PNG" />
+    <Content Include="Image\optima.PNG" />
+    <Content Include="Image\pbmin.Image.png" />
+    <Content Include="Image\sanyosw15.jpg" />
+    <Content Include="Image\tosh.jpg" />
+    <Content Include="Image\vega.PNG" />
+    <Content Include="insertROOMsException.aspx" />
+    <Content Include="Logon.aspx" />
+    <Content Include="manageROOMs.aspx" />
+    <Content Include="AssetsManage.aspx" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="Confirm.aspx" />
+    <Content Include="css\site.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="Exception.aspx" />
+    <Content Include="Exception2.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="help.aspx" />
+    <Content Include="Image\ablock.png" />
+    <Content Include="Image\ablock2nd.png" />
+    <Content Include="Image\Arrow-icon.png" />
+    <Content Include="Image\bblocktrolley.png" />
+    <Content Include="Image\bloggie.png" />
+    <Content Include="Image\calendar.png" />
+    <Content Include="Image\cblock.png" />
+    <Content Include="Image\collegeLogo.png" />
+    <Content Include="Image\dblock.png" />
+    <Content Include="Image\DoneTick1.png" />
+    <Content Include="Image\EpsomEMP-83.png" />
+    <Content Include="Image\exclamation.png" />
+    <Content Include="Image\fujia820.png" />
+    <Content Include="Image\Goodmanstvd32100.jpg" />
+    <Content Include="Image\Ilt1.jpg" />
+    <Content Include="Image\kblock.png" />
+    <Content Include="Image\NotAllowed.png" />
+    <Content Include="Image\Olympusc350.jpg" />
+    <Content Include="Image\optomaES526.png" />
+    <Content Include="Image\Panasonicgs520eb.jpg" />
+    <Content Include="Image\Panasonicm50.jpg" />
+    <Content Include="Image\Paspeaker.png" />
+    <Content Include="Image\pcspeakers.png" />
+    <Content Include="Image\photo.jpg" />
+    <Content Include="Image\Screen.jpg" />
+    <Content Include="Image\Screen2.jpg" />
+    <Content Include="Image\Tripod.jpg" />
+    <Content Include="Image\Tripod2.jpg" />
+    <Content Include="Image\Xpr14.jpg" />
+    <Content Include="IndexManage.aspx" />
+    <Content Include="InsertNewAsset.aspx" />
+    <Content Include="InsetException.aspx" />
+    <Content Include="JS\jquery-1.11.1.min.js" />
+    <Content Include="JS\JScript1.js" />
+    <Content Include="ManageAllBooking.aspx" />
+    <Content Include="MyBooking.aspx" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\calendar-disabled.png" />
+    <Content Include="public\css\calendar.png" />
+    <Content Include="public\css\default.css" />
+    <Content Include="public\css\metallic.css" />
+    <Content Include="public\css\metallic\default-date.png" />
+    <Content Include="public\css\metallic\disabled-date.png" />
+    <Content Include="public\css\metallic\header.png" />
+    <Content Include="public\css\metallic\selected-date.png" />
+    <Content Include="public\css\themes.png" />
+    <Content Include="public\javascript\zebra_datepicker.js" />
+    <Content Include="public\javascript\zebra_datepicker.src.js" />
+    <Content Include="reminderEmailStart.aspx" />
+    <Content Include="StudentLogInAttempt.aspx" />
+    <Content Include="system1.css" />
+    <Content Include="Index.aspx" />
+    <Content Include="ViewHistory.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addROOM.aspx.cs">
+      <DependentUpon>addROOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addROOM.aspx.designer.cs">
+      <DependentUpon>addROOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="insertROOMsException.aspx.cs">
+      <DependentUpon>insertROOMsException.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="insertROOMsException.aspx.designer.cs">
+      <DependentUpon>insertROOMsException.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LdapAuthentication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageROOMs.aspx.cs">
+      <DependentUpon>manageROOMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageROOMs.aspx.designer.cs">
+      <DependentUpon>manageROOMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetsManage.aspx.cs">
+      <DependentUpon>AssetsManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetsManage.aspx.designer.cs">
+      <DependentUpon>AssetsManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dailyBookingEmail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exception.aspx.cs">
+      <DependentUpon>Exception.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exception.aspx.designer.cs">
+      <DependentUpon>Exception.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exception2.aspx.cs">
+      <DependentUpon>Exception2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exception2.aspx.designer.cs">
+      <DependentUpon>Exception2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getStaffDetail.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexManage.aspx.cs">
+      <DependentUpon>IndexManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexManage.aspx.designer.cs">
+      <DependentUpon>IndexManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNewAsset.aspx.cs">
+      <DependentUpon>InsertNewAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertNewAsset.aspx.designer.cs">
+      <DependentUpon>InsertNewAsset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsetException.aspx.cs">
+      <DependentUpon>InsetException.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsetException.aspx.designer.cs">
+      <DependentUpon>InsetException.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.Master.cs">
+      <DependentUpon>logIn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logIn.Master.designer.cs">
+      <DependentUpon>logIn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAllBooking.aspx.cs">
+      <DependentUpon>ManageAllBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAllBooking.aspx.designer.cs">
+      <DependentUpon>ManageAllBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyBooking.aspx.cs">
+      <DependentUpon>MyBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyBooking.aspx.designer.cs">
+      <DependentUpon>MyBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reminderEmailStart.aspx.cs">
+      <DependentUpon>reminderEmailStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reminderEmailStart.aspx.designer.cs">
+      <DependentUpon>reminderEmailStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="runEmailPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudentLogInAttempt.aspx.cs">
+      <DependentUpon>StudentLogInAttempt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLogInAttempt.aspx.designer.cs">
+      <DependentUpon>StudentLogInAttempt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system.Master.cs">
+      <DependentUpon>system.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="system.Master.designer.cs">
+      <DependentUpon>system.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="systemManage.Master.cs">
+      <DependentUpon>systemManage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="systemManage.Master.designer.cs">
+      <DependentUpon>systemManage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="tomorrowBookingEmail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="system.Master" />
+    <Content Include="systemManage.Master" />
+    <Content Include="logIn.Master" />
+    <Content Include="packages.config" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\AssetBookingSystem.pubxml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62324</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61173/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

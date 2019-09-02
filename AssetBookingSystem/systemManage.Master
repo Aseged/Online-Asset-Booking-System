@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="systemManage.master.cs" Inherits="AssetBookingSystem.systemManage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Asset Booking Form</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+                
+    
+                    <link href="system1.css" rel="stylesheet" type="text/css" media="screen" />
+                    <script type="text/javascript" src="JS/jquery-1.11.1.min.js"></script>
+                    <script type="text/javascript" src="JS/JScript1.js"></script>  
+                        <link rel="stylesheet" href="public/css/bootstrap.css" type="text/css"/>    
+                       <script type="text/javascript" src="public/javascript/zebra_datepicker.js"></script>
+                        <script type="text/javascript" src="public/javascript/jquery.min.js"></script>
+
+ <style type="text/css">
+        .auto-style1 {
+            width: 282px;
+            height: 100px;
+        }
+    </style> 
+
+</head>
+
+
+
+
+<body>
+    
+    <form id="form1" runat="server">
+    
+       <div id="logoDiv">
+                 <div id="logoDiveWrapper">  
+                               <div id="topMenu">
+                                   <%--<a href="Index.aspx">Home |</a>
+                                   <a href="Calendar.aspx">calendar |</a>
+                                   <a href="myBooking.aspx"> my booking</a>--%>
+                                   <ul>
+                       <li><a href="IndexManage.aspx"  >HOME |</a></li>
+                       <li><a href="Calendar.aspx"  >CALENDAR |</a></li>
+                       <li><a href="MyBooking.aspx"  >MY BOOKING |</a></li>
+                       <li> MANAGE▼
+                            
+                          <ul class="subMnue"> 
+                                     	
+                                           </br> </br><li><a href="AssetsManage.aspx"  >MANAGE ASSET</a></li></ br><li>
+                                               <a href="manageROOMs.aspx"  >MANAGE ROOMS</a></li></br><li>
+                                           <a href="ManageAllBooking.aspx"  >MANAGE BOOKING</a></li></br><li>
+                                           <a href="ViewHistory.aspx"  >VIEW HISTORY </a></li></br>
+                           </ul> 
+                          </li> 
+                                       </ul> 
+                               </div>
+           
+                       <div id="logoDiveLeft">
+                   
+                           <img alt="Sworcs College" class="auto-style1" src="Image/collegeLogo.png" />
+                                 </div>
+           </div> 
+           </div>
+        <div id="dummyTop"></div>
+
+
+
+          <div class="mainContainer" id="MasterContainer">
+             <asp:Label ID="lblUserName" runat="server" Text=""></asp:Label>
+
+              asset booking form
+              <div class="mainContainer" id="mainPageContainer" >
+        <div class="containers" id="welcome" >
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+       </asp:ContentPlaceHolder>
+
+            </div>
+                  </div>
+
+
+
+
+
+
+<div id="footer">
+    <div class="footerLinks">
+                
+         <a href="Calendar.aspx">calendar |</a> 
+        <a href="myBooking.aspx">my booking | </a> 
+        <a href="https://spiceworks.evesham.ac.uk/portal/page/1-home">contact IT support | </a>
+        <a href="help.aspx">help  </a>
+        
+            </div>
+        </div>
+
+
+</div>
+<p id="footNote"> Page Design by Aseged Woldeselassie<br />
+Copyright © 2015</p>
+            
+        
+
+
+
+   <a href="#" class="scrollToTop"></a>
+    
+    </form>
+    
+   
+</body>
+
+</html>
